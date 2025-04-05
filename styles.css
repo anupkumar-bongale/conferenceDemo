@@ -1,0 +1,248 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .navbar .logo img,
+  .navbar .sponsor-logo img {
+    height: 50px;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links li a:hover {
+    color: #aad4ff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('images/hero-placeholder.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  #countdown {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  /* About Section */
+  .about {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .about .container {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #003366;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content .social-icons {
+    margin-top: 10px;
+  }
+  
+  .footer-content .social-icons a img {
+    width: 28px;
+    margin: 0 8px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.2rem;
+    }
+  
+    .about {
+      padding: 40px 15px;
+    }
+  }
+
+  /* Table for Dates Page */
+.dates-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dates-table th,
+  .dates-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .dates-table th {
+    background-color: #003366;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .dates-table tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* Committee Page Styling */
+.committee-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 30px 0;
+  }
+  
+  .committee-list li {
+    padding: 8px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .committee-list.two-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+  }
+  
+  /* CFP Page Styling */
+.cfp-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .cfp-list.two-column {
+    columns: 2;
+    column-gap: 40px;
+  }
+  
+  .btn-download {
+    display: inline-block;
+    background-color: #003366;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .btn-download:hover {
+    background-color: #0055aa;
+  }
+
+  /* Contact Page Styling */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .contact-block {
+    margin-bottom: 30px;
+  }
+  
+  .contact-block h2 {
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .contact-block a {
+    color: #0055aa;
+    text-decoration: none;
+  }
+  
+  .contact-block a:hover {
+    text-decoration: underline;
+  }
+  
+  
